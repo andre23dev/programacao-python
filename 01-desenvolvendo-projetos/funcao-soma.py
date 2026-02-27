@@ -1,8 +1,11 @@
 def somar(a, b):
     return a + b
+try:
+    numero1 = float(input("Digite um número >> "))
+    numero2 = float(input("Digite outro número >> "))
 
-numero1 = float(input("Digite um número >> "))
-numero2 = float(input("Digite outro número >> "))
+    resultado = somar(numero1, numero2)
+    print(f"O resultado da soma é: {resultado}")
 
-resultado = somar(numero1, numero2)
-print(f"O resultado da soma é: {resultado}")
+except ValueError:
+    print|("Erro: Digite apenas números válidos!")
